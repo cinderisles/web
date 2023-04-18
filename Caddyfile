@@ -1,0 +1,12 @@
+
+http://localhost:4000 {
+  handle_path /api {
+    reverse_proxy http://localhost:3000
+  }
+
+  handle {
+    root * ./
+    try_files {path} /index.html
+    file_server
+  }
+}

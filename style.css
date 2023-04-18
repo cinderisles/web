@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 3rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.on {
+    background-color: #257d25;
+}
+
+.off {
+    background-color: #bd1b1b;
+}

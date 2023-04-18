@@ -2,6 +2,8 @@
 
 Example client app that fetches JSON from API
 
+![screenshot](./screenshot.png)
+
 ## Files
 
 - main.js

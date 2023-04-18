@@ -32,7 +32,7 @@ Example client app that fetches JSON from API
 
   a Node.js server. Node.js is a server-side JavaScript runtime. There are tons of versions of Node.js since they do LTS for several major versions. So you'll need a way to make sure you're on a specific version. Easiest way to do that is with Node Version Manager (nvm), which you can get from Scoop: `scoop install nvm`
 
-  Then nvm can read the `.nvmrc` file in this folder in order to use `Node 16`
+  To have nvm use Node 16, run `nvm install 16`. If you're opening a new terminal instance, this version will be reset, so run `nvm use 16`. Check node version with `node -v`. Or if you are in the server folder, you can skip worrying about the exact version and then run `nvm install` and it will read the `.nvmrc` file and install the right version. If you don't specify a version, it will use the latest version of Node, which might break things depending on the version, as the Node devs like the make breaking changes on major versions (semver). So in case the API changed, just trying to get you on the same version I used to develop this, but it probably doesnt matter.
 
   then you can run the server with `node index.mjs`. This is a replacement for whatever your real server happens to be and is just an example. It just returns some hard-coded JSON
 
